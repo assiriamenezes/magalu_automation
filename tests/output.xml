@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.6 on win32)" generated="20210907 21:35:56.591" rpa="false" schemaversion="2">
+<suite id="s1" name="Testcases" source="C:\magalu_projeto\tests\testcases.robot">
+<test id="s1-t1" name="Scenario 1: Search the products">
+<kw name="Given the Magazine Luiza site is visible" library="BDD" sourcename="Given ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="the Magazine Luiza site is visible" library="keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210907 21:35:57.096" level="INFO">Opening browser 'chrome' to base url 'https://www.magazineluiza.com.br/'.</msg>
+<status status="PASS" starttime="20210907 21:35:57.095" endtime="20210907 21:36:08.333"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210907 21:36:08.334" endtime="20210907 21:36:10.431"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 21:36:12.438" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210907 21:36:10.432" endtime="20210907 21:36:12.438"/>
+</kw>
+<status status="PASS" starttime="20210907 21:35:57.094" endtime="20210907 21:36:12.438"/>
+</kw>
+<status status="PASS" starttime="20210907 21:35:57.093" endtime="20210907 21:36:12.438"/>
+</kw>
+<status status="PASS" starttime="20210907 21:35:57.093" endtime="20210907 21:36:12.438"/>
+</kw>
+<kw name="And the user find any product with 'Iphone XS' text" library="BDD" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="the user find any product with 'Iphone XS' text" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SEARCH_TAB}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210907 21:36:12.445" endtime="20210907 21:36:12.547"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SEARCH_TAB}</arg>
+<arg>Iphone XS</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210907 21:36:12.547" level="INFO">Typing text 'Iphone XS' into text field '//*[@id="inpHeaderSearch"]'.</msg>
+<status status="PASS" starttime="20210907 21:36:12.547" endtime="20210907 21:36:12.947"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:12.438" endtime="20210907 21:36:12.947"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:12.438" endtime="20210907 21:36:12.947"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:12.438" endtime="20210907 21:36:12.947"/>
+</kw>
+<kw name="And the user click in 'first' result" library="BDD" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="the user click in 'first' result" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${FIRST_SEARCH}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210907 21:36:12.956" endtime="20210907 21:36:14.274"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FIRST_SEARCH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 21:36:14.274" level="INFO">Clicking element '//*[@id="__next"]/div[2]/div/div[1]/div/div[1]/header/div/div[1]/div/div/div[2]/div[2]/ul[2]/li[2]'.</msg>
+<status status="PASS" starttime="20210907 21:36:14.274" endtime="20210907 21:36:17.919"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:12.955" endtime="20210907 21:36:17.920"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:12.947" endtime="20210907 21:36:17.920"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:12.947" endtime="20210907 21:36:17.920"/>
+</kw>
+<kw name="When the user find other product with 'TV Samsung' text" library="BDD" sourcename="When ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="the user find other product with 'TV Samsung' text" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SEARCH_TAB}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210907 21:36:17.922" endtime="20210907 21:36:18.424"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SEARCH_TAB}</arg>
+<arg>TV Samsung</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210907 21:36:18.424" level="INFO">Typing text 'TV Samsung' into text field '//*[@id="inpHeaderSearch"]'.</msg>
+<status status="PASS" starttime="20210907 21:36:18.424" endtime="20210907 21:36:18.687"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:17.922" endtime="20210907 21:36:18.687"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:17.921" endtime="20210907 21:36:18.687"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:17.920" endtime="20210907 21:36:18.687"/>
+</kw>
+<kw name="And the user press 'Enter' button" library="BDD" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="the user press 'Enter' button" library="keywords">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${SEARCH_TAB}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210907 21:36:18.689" level="INFO">Sending key(s) ('ENTER',) to //*[@id="inpHeaderSearch"] element.</msg>
+<msg timestamp="20210907 21:36:19.212" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20210907 21:36:19.212" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20210907 21:36:18.689" endtime="20210907 21:36:28.929"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 21:36:33.935" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210907 21:36:28.929" endtime="20210907 21:36:33.935"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:18.688" endtime="20210907 21:36:33.935"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:18.688" endtime="20210907 21:36:33.935"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:18.688" endtime="20210907 21:36:33.935"/>
+</kw>
+<status status="PASS" starttime="20210907 21:35:57.092" endtime="20210907 21:36:33.935"/>
+</test>
+<test id="s1-t2" name="Scenario 2: Navigate in any pages">
+<kw name="Given the user click in 'Entre ou Cadastre-se' link" library="BDD" sourcename="Given ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="the user click in 'Entre ou Cadastre-se' link" library="keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>${LINK}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 21:36:33.940" level="INFO">Clicking element '//a[contains(., "Entre ou cadastre-se")]'.</msg>
+<status status="PASS" starttime="20210907 21:36:33.940" endtime="20210907 21:36:39.076"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:33.940" endtime="20210907 21:36:39.076"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:33.940" endtime="20210907 21:36:39.076"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:33.940" endtime="20210907 21:36:39.076"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:33.940" endtime="20210907 21:36:39.084"/>
+</kw>
+<kw name="And the user go to 'Ofertas do dia' page" library="BDD" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="the user go to 'Ofertas do dia' page" library="keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>${OFERTA_VAR}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${OFERTA_VAR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210907 21:36:44.654" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210907 21:36:44.165" endtime="20210907 21:36:44.655"/>
+</kw>
+<msg timestamp="20210907 21:36:44.655" level="FAIL">Element '//a[contains(., "Ofertas do dia")]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20210907 21:36:39.088" endtime="20210907 21:36:44.655"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:39.088" endtime="20210907 21:36:44.655"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>${OFERTA_VAR}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${OFERTA_VAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 21:36:44.655" level="INFO">Clicking element '//a[contains(., "Ofertas do dia")]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210907 21:36:45.219" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210907 21:36:44.671" endtime="20210907 21:36:45.219"/>
+</kw>
+<msg timestamp="20210907 21:36:45.220" level="FAIL">Element with locator '//a[contains(., "Ofertas do dia")]' not found.</msg>
+<status status="FAIL" starttime="20210907 21:36:44.655" endtime="20210907 21:36:45.220"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:44.655" endtime="20210907 21:36:45.220"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:39.087" endtime="20210907 21:36:45.220"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:39.085" endtime="20210907 21:36:45.220"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:39.085" endtime="20210907 21:36:45.220"/>
+</kw>
+<kw name="And the user go to 'Celulares' page" library="BDD" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="the user go to 'Celulares' page" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CELULARES_VAR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210907 21:36:45.229" endtime="20210907 21:36:45.297"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CELULARES_VAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 21:36:45.297" level="INFO">Clicking element '//a[contains(., "Celulares")]'.</msg>
+<status status="PASS" starttime="20210907 21:36:45.297" endtime="20210907 21:36:53.363"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:45.228" endtime="20210907 21:36:53.364"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:45.227" endtime="20210907 21:36:53.364"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:45.220" endtime="20210907 21:36:53.365"/>
+</kw>
+<kw name="And the user go to 'Móveis' page" library="BDD" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="the user go to 'Móveis' page" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MOVEIS_VAR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210907 21:36:53.371" endtime="20210907 21:36:55.190"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MOVEIS_VAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 21:36:55.191" level="INFO">Clicking element '//a[contains(., "Móveis")]'.</msg>
+<status status="PASS" starttime="20210907 21:36:55.190" endtime="20210907 21:37:01.706"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:53.370" endtime="20210907 21:37:01.706"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:53.368" endtime="20210907 21:37:01.706"/>
+</kw>
+<status status="PASS" starttime="20210907 21:36:53.366" endtime="20210907 21:37:01.706"/>
+</kw>
+<kw name="And the user go to 'Eletrodomésticos' page" library="BDD" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="the user go to 'Eletrodomésticos' page" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELETRO_VAR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210907 21:37:01.706" endtime="20210907 21:37:01.766"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELETRO_VAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 21:37:01.766" level="INFO">Clicking element '//a[contains(., "Eletrodomésticos")]'.</msg>
+<status status="PASS" starttime="20210907 21:37:01.766" endtime="20210907 21:37:09.886"/>
+</kw>
+<status status="PASS" starttime="20210907 21:37:01.706" endtime="20210907 21:37:09.887"/>
+</kw>
+<status status="PASS" starttime="20210907 21:37:01.706" endtime="20210907 21:37:09.887"/>
+</kw>
+<status status="PASS" starttime="20210907 21:37:01.706" endtime="20210907 21:37:09.887"/>
+</kw>
+<kw name="And the user go to 'TV e Vídeo' page" library="BDD" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="the user go to 'TV e Vídeo' page" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${TV_VAR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210907 21:37:09.887" endtime="20210907 21:37:09.940"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TV_VAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 21:37:09.940" level="INFO">Clicking element '//a[contains(., "Tv e Vídeo")]'.</msg>
+<status status="PASS" starttime="20210907 21:37:09.940" endtime="20210907 21:37:17.374"/>
+</kw>
+<status status="PASS" starttime="20210907 21:37:09.887" endtime="20210907 21:37:17.374"/>
+</kw>
+<status status="PASS" starttime="20210907 21:37:09.887" endtime="20210907 21:37:17.374"/>
+</kw>
+<status status="PASS" starttime="20210907 21:37:09.887" endtime="20210907 21:37:17.375"/>
+</kw>
+<kw name="And the user go to 'Informática' page" library="BDD" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="the user go to 'Informática' page" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${INFO_VAR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210907 21:37:17.381" endtime="20210907 21:37:18.399"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${INFO_VAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 21:37:18.400" level="INFO">Clicking element '//a[contains(., "Informática")]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210907 21:37:20.741" level="FAIL">AttributeError: 'NoneType' object has no attribute 'encode'</msg>
+<status status="FAIL" starttime="20210907 21:37:20.705" endtime="20210907 21:37:20.741"/>
+</kw>
+<msg timestamp="20210907 21:37:20.742" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: AttributeError: 'NoneType' object has no attribute 'encode'</msg>
+<msg timestamp="20210907 21:37:20.773" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=93.0.4577.63)
+</msg>
+<status status="FAIL" starttime="20210907 21:37:18.399" endtime="20210907 21:37:20.774"/>
+</kw>
+<status status="FAIL" starttime="20210907 21:37:17.379" endtime="20210907 21:37:20.775"/>
+</kw>
+<status status="FAIL" starttime="20210907 21:37:17.378" endtime="20210907 21:37:20.775"/>
+</kw>
+<status status="FAIL" starttime="20210907 21:37:17.376" endtime="20210907 21:37:20.776"/>
+</kw>
+<kw name="When the user click in 'Cashback do Milhao'" library="BDD" sourcename="When ${keyword}">
+<status status="NOT RUN" starttime="20210907 21:37:20.777" endtime="20210907 21:37:20.777"/>
+</kw>
+<kw name="Then the 'Cashback do Milhao' banner should be visible" library="BDD" sourcename="Then ${keyword}">
+<status status="NOT RUN" starttime="20210907 21:37:20.778" endtime="20210907 21:37:20.779"/>
+</kw>
+<status status="FAIL" starttime="20210907 21:36:33.939" endtime="20210907 21:37:20.783">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=93.0.4577.63)
+</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210907 21:37:20.848" endtime="20210907 21:37:23.233"/>
+</kw>
+<status status="FAIL" starttime="20210907 21:35:56.598" endtime="20210907 21:37:23.233"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Testcases">Testcases</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210907 21:37:20.742" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: AttributeError: 'NoneType' object has no attribute 'encode'</msg>
+</errors>
+</robot>
